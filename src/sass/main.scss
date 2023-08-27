@@ -1,3 +1,6 @@
-body{
-    background-color: green;
-}
+// Abstract 
+@import "abstracts/variables";
+
+// Base 
+@import "base/reset";             
+@import "base/typography";  
