@@ -1,10 +1,10 @@
 import React from "react";
-import NavBar from "../components/Navbar";
+import Navbar from "../../layouts/Navbar";
 
 function HomePage() {
   return (
-    <div>
-      <NavBar />
+    <div className="">
+      <Navbar />
       Anasayfa
     </div>
   );

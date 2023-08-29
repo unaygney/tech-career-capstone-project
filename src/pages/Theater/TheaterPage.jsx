@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Navbar from '../../layouts/Navbar'
 
 function TheaterPage() {
   return (
-    <div>
+    <div className='container'>
       <Navbar />
       Theater Page
     </div>

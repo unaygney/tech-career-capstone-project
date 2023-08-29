@@ -1,10 +1,10 @@
 import {Routes , Route } from 'react-router-dom'
 // Pages
-import HomePage from './pages/HomePage';
-import TheaterPage from './pages/TheaterPage';
-import CinemaPage from './pages/CinemaPage';
-import ExhibitPage from './pages/ExhibitPage';
-import ConcertPage from './pages/ConcertPage';
+import HomePage from './pages/Home/HomePage';
+import TheaterPage from './pages/Theater/TheaterPage';
+import CinemaPage from './pages/Cinema/CinemaPage';
+import ExhibitPage from './pages/Exhibit/ExhibitPage';
+import ConcertPage from './pages/Concert/ConcertPage';
 
 function App() {
  

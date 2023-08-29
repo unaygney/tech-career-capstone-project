@@ -1,9 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-
+import Navbar from "../../layouts/Navbar";
 function CinemaPage() {
   return (
-    <div>
+    <div className='container'>
         <Navbar />
       Cinema Page
     </div>

@@ -4,3 +4,13 @@
 // Base 
 @import "base/reset";             
 @import "base/typography";  
+
+// Components
+@import "components/container";
+
+//Layout
+@import "layout/navbar";
+
+
+//Pages
+@import "pages/home.scss";

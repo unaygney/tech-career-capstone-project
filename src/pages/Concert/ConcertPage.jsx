@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Navbar from "../../layouts/Navbar";
 
 function ConcertPage() {
   return (
-    <div>
+    <div className='container'>
       <Navbar />
       concert page
     </div>
