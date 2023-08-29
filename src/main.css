@@ -83,6 +83,13 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
+.swiper {
+  width: 100%;
+  height: 720px; }
+  .swiper img {
+    width: 100%;
+    object-fit: cover; }
+
 .navbar {
   background-color: #5522CC;
   color: #fff;
@@ -100,6 +107,9 @@ a {
       gap: 24px; }
       .navbar .container .links a {
         color: inherit; }
+        .navbar .container .links a.active {
+          padding-bottom: .4rem;
+          border-bottom: 1px solid #a5a5a5; }
         .navbar .container .links a:hover {
           opacity: 0.6; }
     .navbar .container .hamburger-btn {
@@ -118,7 +128,8 @@ a {
     width: 200px;
     border-radius: 12px;
     padding: 2rem 1rem;
-    transition: all .3s ease-in; }
+    transition: all .3s ease-in;
+    z-index: 1000; }
     .navbar .container .links.active {
       right: 50px; }
     .navbar .container .links a {

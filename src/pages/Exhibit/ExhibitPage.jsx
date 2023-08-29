@@ -3,7 +3,7 @@ import Navbar from "../../layouts/Navbar";
 
 function ExhibitPage() {
   return (
-    <div className='container'>
+    <div className=''>
       <Navbar />
       exhibit page
     </div>

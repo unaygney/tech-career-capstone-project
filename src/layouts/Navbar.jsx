@@ -5,7 +5,6 @@ import HamburgerMenu from '../assets/hamburger-menu.png'
 import { useState } from "react";
 
 function Navbar() {
-
   const [isActive , setIsActive] = useState(false)
 
   console.log(isActive)

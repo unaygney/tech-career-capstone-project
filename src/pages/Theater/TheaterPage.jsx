@@ -3,7 +3,7 @@ import Navbar from '../../layouts/Navbar'
 
 function TheaterPage() {
   return (
-    <div className='container'>
+    <div className=''>
       <Navbar />
       Theater Page
     </div>

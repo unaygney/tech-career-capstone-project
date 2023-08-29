@@ -22,6 +22,11 @@
       a {
         color: inherit;
 
+        &.active{
+          padding-bottom: .4rem ;
+          border-bottom: 1px solid $color-gray;
+        }
+
         &:hover {
           opacity: 0.6;
         }
@@ -52,6 +57,7 @@
         border-radius: 12px;
         padding: 2rem 1rem;
         transition: all .3s ease-in ;
+        z-index: 1000;
         &.active{
           right: 50px;
         }
@@ -60,6 +66,8 @@
           width: 100%;
           text-align: center;
           padding: .5rem 0;
+
+
         }
       }
 

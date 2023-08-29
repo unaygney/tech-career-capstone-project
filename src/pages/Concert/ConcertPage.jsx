@@ -3,7 +3,7 @@ import Navbar from "../../layouts/Navbar";
 
 function ConcertPage() {
   return (
-    <div className='container'>
+    <div className=''>
       <Navbar />
       concert page
     </div>
