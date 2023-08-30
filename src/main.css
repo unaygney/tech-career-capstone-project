@@ -225,7 +225,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 12px; }
+        gap: 16px; }
         #footer .container .col.col-2 ul li a {
           color: inherit;
           font-size: 14px;
