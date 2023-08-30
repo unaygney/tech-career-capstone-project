@@ -5,17 +5,25 @@ import DataContext from "../../context/DataContext";
 import EventItem from './EventItem';
 
 
+
+
 function EventList() {
 
-    const {apiData} = useContext(DataContext)
+    const {apiData , dataFetched} = useContext(DataContext)
 
+   
 
   return (
+
     <div className='cards container'>
       {apiData?.map((item) => (
-              <EventItem data={item} key={item.Id} />
+              <EventItem  data={item} key={item.Id} />
             ))}
     </div>
+
+
+
+
   )
 }
 

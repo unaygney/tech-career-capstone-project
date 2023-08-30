@@ -12,7 +12,15 @@ export const DataProvider = ({ children }) => {
         axios.get('https://openapi.izmir.bel.tr/api/ibb/kultursanat/etkinlikler')
         .then(res => res.data )
         .then(data => {
-            setApiData(data)
+                setApiData(data);
+
+                setTimeout(() => {
+                    setDataFetched(true)
+                }, 5000);
+                
+     
+
+
         })
 
         
@@ -20,7 +28,7 @@ export const DataProvider = ({ children }) => {
     }, [])
 
     return (
-        <DataContext.Provider value={{apiData}}>
+        <DataContext.Provider value={{apiData , dataFetched}}>
             {children}
         </DataContext.Provider>
     )
