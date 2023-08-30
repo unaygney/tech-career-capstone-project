@@ -7,7 +7,7 @@ import { useState } from "react";
 function Navbar() {
   const [isActive , setIsActive] = useState(false)
 
-  console.log(isActive)
+
   return (
     <>
       <nav className="navbar">
