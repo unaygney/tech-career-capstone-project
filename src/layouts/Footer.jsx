@@ -1,14 +1,14 @@
 import React from "react";
-import Logo from "../../src/assets/logo_transp.png";
+//Logo
+import { BsTwitter ,BsTiktok ,BsFacebook  , BsYoutube } from 'react-icons/Bs';
+
 
 function Footer() {
   return (
     <footer id="footer">
       <div className="container">
         <div className="col col-1">
-          <div className="logo">
-            <img src={Logo} alt="logo" />
-          </div>
+  
 
           <div className="about-us">
             <p>
@@ -20,15 +20,22 @@ function Footer() {
         <div className="col col-2">
             <h4>Etkinlik Düzenleyin</h4>
             <ul>
-                <li>Sinema</li>
-                <li>Tiyatro</li>
-                <li>Sergi</li>
-                <li>Konser</li>
+                <li> <a href="#">Sinema</a></li>
+                <li> <a href="#">Tiyatro</a></li>
+                <li> <a href="#">Sergi</a></li>
+                <li> <a href="#">Konser</a></li>
+           
             </ul>
         </div>
 
         <div className="col col-3">
-            asd
+            <h4 className="social-media">Sosyal Medya Adreslerimiz</h4>
+            <ul>
+                <li><a href="#"><BsFacebook/></a></li>
+                <li><a href="#"><BsTwitter/></a></li>
+                <li><a href="#"><BsTiktok/></a></li>
+                <li><a href="#"><BsYoutube/></a></li>
+            </ul>
         </div>
       </div>
     </footer>

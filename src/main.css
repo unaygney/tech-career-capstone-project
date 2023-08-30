@@ -200,7 +200,8 @@ a {
   color: #F3F3F3; }
   #footer .container {
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    justify-content: center;
     padding: 1rem 0;
     gap: 24px; }
     #footer .container .col {
@@ -208,6 +209,11 @@ a {
       #footer .container .col.col-1 .logo {
         width: 100px;
         height: 100px; }
+      #footer .container .col.col-1 .about-us p {
+        font-size: 14px;
+        color: #F3F3F3;
+        line-height: 22.4px;
+        font-weight: 400; }
       #footer .container .col.col-2 h4 {
         font-size: 18px;
         color: #fff;
@@ -220,11 +226,34 @@ a {
         flex-direction: column;
         align-items: center;
         gap: 12px; }
-        #footer .container .col.col-2 ul li {
+        #footer .container .col.col-2 ul li a {
           color: inherit;
           font-size: 14px;
           font-weight: 500;
           line-height: 2; }
+          #footer .container .col.col-2 ul li a:hover {
+            opacity: 0.7; }
+      #footer .container .col.col-3 h4 {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        text-align: center; }
+      #footer .container .col.col-3 ul {
+        display: flex;
+        gap: 24px;
+        justify-content: center; }
+        #footer .container .col.col-3 ul li {
+          margin-top: 2rem; }
+          #footer .container .col.col-3 ul li a {
+            color: inherit; }
+            #footer .container .col.col-3 ul li a svg {
+              fill: white;
+              width: 30px;
+              height: 30px; }
+              #footer .container .col.col-3 ul li a svg:hover {
+                fill: #a5a5a5; }
 
 body {
   background-color: #E2E0FF; }

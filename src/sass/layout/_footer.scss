@@ -5,7 +5,8 @@
 
     .container{
         display: flex;
-        align-items: center;
+        align-items:baseline;
+        justify-content: center;
         padding: 1rem 0;
         gap: 24px;
 
@@ -17,6 +18,15 @@
                 .logo{
                     width: 100px;
                     height: 100px;
+                }
+
+                .about-us{
+                    p{
+                        font-size: 14px;
+                        color: #F3F3F3;
+                        line-height: 22.4px;
+                        font-weight: 400;
+                    }
                 }
 
             }
@@ -37,14 +47,58 @@
                     align-items: center;
                     gap: 12px;
                     li{
-                        color: inherit;
-                        font-size: 14px;
-                        font-weight: 500;
-                        line-height: 2;
+              
+                        a{
+                            color: inherit;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 2;
+
+                            &:hover{
+                                opacity: 0.7;
+                            }
+                        }
+
 
                     }
                 }
 
+            }
+
+            &.col-3{
+                h4{         
+                     font-size: 18px;
+                    color: $color-white;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin-bottom: 1rem;
+                    text-align: center;
+
+
+                }
+
+                ul{
+                    display: flex;
+                    gap: 24px;
+                    justify-content: center;
+
+                    li{
+                        margin-top: 2rem;
+
+                        a{
+                            color: inherit;
+                           svg{
+                            fill: white;
+                            width: 30px;
+                            height: 30px;
+
+                            &:hover{
+                                fill: $color-gray;
+                            }
+                           }
+                        }
+                    }
+                }
             }
         }
 
