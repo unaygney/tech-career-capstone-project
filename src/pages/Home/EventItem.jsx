@@ -2,8 +2,10 @@ import { useContext } from "react";
 import DataContext from "../../context/DataContext";
 import "react-loading-skeleton/dist/skeleton.css";
 import Skeleton from "react-loading-skeleton";
+import { useNavigate } from "react-router-dom";
 
 function EventItem({ data }) {
+  const navigate = useNavigate();
   const date = new Date(data.EtkinlikBaslamaTarihi);
   const formattedDate = date.toLocaleDateString("en-US", {
     month: "short",
@@ -12,7 +14,7 @@ function EventItem({ data }) {
   const { dataFetched } = useContext(DataContext);
 
   return (
-    <div className="card">
+    <div onClick={() => navigate(`event/${data.Id}`) } className="card">
       <div className="img-wrapper">
         {dataFetched ? (
           <img src={data.KucukAfis} alt={data.KisaAciklama} />

@@ -13,7 +13,7 @@ function EventList({ search }) {
       item.Adi.toLocaleLowerCase().includes(search.toLowerCase())
     );
     setFilteredActivity(filtered);
-  }, [search]);
+  }, [search , apiData]);
 
   return (
     <div className="cards container">

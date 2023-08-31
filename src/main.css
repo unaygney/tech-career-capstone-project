@@ -65,6 +65,11 @@ body, html {
   height: 100%;
   overflow-x: hidden; }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
 body {
   font-family: 'DM Sans', sans-serif; }
 
@@ -197,7 +202,8 @@ a {
 
 #footer {
   background-color: #0a075f;
-  color: #F3F3F3; }
+  color: #F3F3F3;
+  margin-top: auto; }
   #footer .container {
     display: flex;
     align-items: baseline;
@@ -257,3 +263,11 @@ a {
 
 body {
   background-color: #E2E0FF; }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+.event-card {
+  flex: 1; }
