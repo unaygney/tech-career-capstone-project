@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from "../../layouts/Navbar";
 import Footer from '../../layouts/Footer'
+import ExhibitList from './ExhibitList'
 function ExhibitPage() {
   return (
     <div className=''>
       <Navbar />
-      exhibit page
+    <ExhibitList />
       <Footer />
     </div>
   )
