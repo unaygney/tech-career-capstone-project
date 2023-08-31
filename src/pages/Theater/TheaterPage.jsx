@@ -1,16 +1,16 @@
-import React from 'react'
-import Navbar from '../../layouts/Navbar'
-import Footer from '../../layouts/Footer'
-import TheaterList from './TheaterList'
+import React from "react";
+import Navbar from "../../layouts/Navbar";
+import Footer from "../../layouts/Footer";
+import TheaterList from "./TheaterList";
 
 function TheaterPage() {
   return (
-    <div className=''>
+    <div className="">
       <Navbar />
-<TheaterList />
+      <TheaterList />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default TheaterPage
+export default TheaterPage;

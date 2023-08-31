@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 import Navbar from "../../layouts/Navbar";
-import Footer from '../../layouts/Footer'
-import ConcertList from './ConcertList'
+import Footer from "../../layouts/Footer";
+import ConcertList from "./ConcertList";
 function ConcertPage() {
   return (
-    <div className=''>
+    <div className="">
       <Navbar />
       <ConcertList />
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default ConcertPage
+export default ConcertPage;

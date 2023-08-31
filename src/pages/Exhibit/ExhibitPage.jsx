@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 import Navbar from "../../layouts/Navbar";
-import Footer from '../../layouts/Footer'
-import ExhibitList from './ExhibitList'
+import Footer from "../../layouts/Footer";
+import ExhibitList from "./ExhibitList";
 function ExhibitPage() {
   return (
-    <div className=''>
+    <div className="">
       <Navbar />
-    <ExhibitList />
+      <ExhibitList />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default ExhibitPage
+export default ExhibitPage;

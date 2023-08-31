@@ -1,20 +1,19 @@
-import React from 'react'
-import { useContext } from 'react';
+import React from "react";
+import { useContext } from "react";
 import DataContext from "../../context/DataContext";
-import TheaterItem from './TheaterItem';
+import TheaterItem from "./TheaterItem";
 
 function TheaterList() {
-
-  const {apiData} = useContext(DataContext)
-  const TheaterActivity = apiData?.filter(event => event.Tur === 'TİYATRO' )
+  const { apiData } = useContext(DataContext);
+  const TheaterActivity = apiData?.filter((event) => event.Tur === "TİYATRO");
 
   return (
-    <div className='cards container'>
-     {TheaterActivity?.map(item => (
+    <div className="cards container">
+      {TheaterActivity?.map((item) => (
         <TheaterItem data={item} key={item.Id} />
       ))}
     </div>
-  )
+  );
 }
 
-export default TheaterList
+export default TheaterList;

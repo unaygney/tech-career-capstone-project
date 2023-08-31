@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 // Components
 import Navbar from "../../layouts/Navbar";
@@ -8,12 +8,16 @@ import EventList from "./EventList";
 import Footer from "../../layouts/Footer";
 
 function HomePage() {
+
+  const [search, setSearch] = useState('')
+
+
   return (
     <div className="">
       <Navbar />
       <Carousel />
-      <SearchBar />
-      <EventList />
+      <SearchBar search={search} setSearch={setSearch} />
+      <EventList search={search} />
       <Footer />
     </div>
   );

@@ -1,20 +1,20 @@
-import React from 'react'
+import React from "react";
 
-function ExhibitItem({data}) {
+function ExhibitItem({ data }) {
   return (
     <div className="card">
-    <div className="img-wrapper">
-      <img src={data.KucukAfis} alt={data.KisaAciklama} />
-    </div>
+      <div className="img-wrapper">
+        <img src={data.KucukAfis} alt={data.KisaAciklama} />
+      </div>
 
-    <div className="card-content">
-      <div className="card-info">
-        <h4 className="activity-info">{data.Adi}</h4>
-        <p className="place"> Yer : {data.EtkinlikMerkezi}</p>
+      <div className="card-content">
+        <div className="card-info">
+          <h4 className="activity-info">{data.Adi}</h4>
+          <p className="place"> Yer : {data.EtkinlikMerkezi}</p>
+        </div>
       </div>
     </div>
-  </div>
-  )
+  );
 }
 
-export default ExhibitItem
+export default ExhibitItem;
