@@ -4,12 +4,11 @@ import 'react-loading-skeleton/dist/skeleton.css'
 import Skeleton from 'react-loading-skeleton'
 
 
-
 function EventItem({ data  }) {
 
 
 const {dataFetched} = useContext(DataContext)
-console.log(data)
+
 
   const date = new Date(data.EtkinlikBaslamaTarihi);
   const formattedDate = date.toLocaleDateString("en-US", {
@@ -20,7 +19,7 @@ console.log(data)
 
   });
 
-  return (
+  return ( 
     <div className="card">
       <div className="img-wrapper">
       {dataFetched ? (

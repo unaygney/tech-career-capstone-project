@@ -9,7 +9,7 @@ import EventItem from './EventItem';
 
 function EventList() {
 
-    const {apiData , dataFetched} = useContext(DataContext)
+    const {apiData } = useContext(DataContext)
 
    
 
