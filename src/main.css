@@ -5,6 +5,9 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap");
+* {
+  box-sizing: border-box; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -90,6 +93,11 @@ a {
   font-weight: 700;
   line-height: normal; }
 
+.heading-s {
+  color: #242565;
+  font-size: 20px;
+  font-weight: 700; }
+
 .container {
   width: 94%;
   max-width: 1024px;
@@ -172,7 +180,8 @@ a {
     overflow: hidden;
     border-radius: 20px 20px 0 0;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    transition: all .3s; }
+    transition: all .3s;
+    cursor: pointer; }
     .cards .card:hover {
       transform: scale(1.1); }
     .cards .card .img-wrapper {
@@ -264,10 +273,47 @@ a {
 body {
   background-color: #E2E0FF; }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  height: 100%; }
-
 .event-card {
-  flex: 1; }
+  flex: 1;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap; }
+  .event-card .img-wrapper {
+    max-width: 400px;
+    width: 94%;
+    height: 50%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    .event-card .img-wrapper img {
+      object-fit: contain; }
+  .event-card .event-content {
+    flex: 1;
+    height: 80%;
+    padding: 3rem 2rem; }
+    .event-card .event-content .event-information {
+      margin-top: 1rem; }
+      .event-card .event-content .event-information .event-heading {
+        margin-bottom: 1rem; }
+      .event-card .event-content .event-information ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px; }
+        .event-card .event-content .event-information ul li p {
+          color: #000;
+          font-size: 16px;
+          font-weight: 500; }
+      .event-card .event-content .event-information .location {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 12px; }
+        .event-card .event-content .event-information .location svg {
+          width: 30px;
+          height: 30px; }
+        .event-card .event-content .event-information .location p {
+          font-size: 24px;
+          font-weight: 500;
+          color: #000; }

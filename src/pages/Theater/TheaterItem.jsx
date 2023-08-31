@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function TheaterItem({ data }) {
+  const navigate = useNavigate()
   return (
-    <div className="card">
+    <div onClick={() => navigate(`event/${data.Id}`) } className="card">
       <div className="img-wrapper">
         <img src={data.KucukAfis} alt={data.KisaAciklama} />
       </div>
