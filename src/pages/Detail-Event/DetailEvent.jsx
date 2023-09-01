@@ -1,9 +1,12 @@
 import React, { useState, useContext, useEffect } from "react";
 import DataContext from "../../context/DataContext";
 import { useParams } from "react-router-dom";
+import { MdLocationOn } from "react-icons/md";
+import moment from "moment";
+
+//Layouts
 import Navbar from "../../layouts/Navbar";
 import Footer from "../../layouts/Footer";
-import { MdLocationOn } from "react-icons/md";
 
 function DetailEvent() {
   const { apiData } = useContext(DataContext);
@@ -46,14 +49,22 @@ function DetailEvent() {
                   </li>
                   <li>
                     <p>
-                      Etkinlik Başlama Saati :{" "}
-                      {filteredData[0]?.EtkinlikBaslamaTarihi}{" "}
+                      Etkinlik Başlama Saati :
+                      {filteredData[0]?.EtkinlikBaslamaTarihi
+                        ? moment(filteredData[0].EtkinlikBaslamaTarihi).format(
+                            "DD/MM/YYYY"
+                          )
+                        : "Tarih bulunamadı"}
                     </p>
                   </li>
                   <li>
                     <p>
                       Etkinlik Bitiş Saati :{" "}
-                      {filteredData[0]?.EtkinlikBitisTarihi}{" "}
+                      {filteredData[0]?.EtkinlikBitisTarihi
+                        ? moment(filteredData[0].EtkinlikBitisTarihi).format(
+                            "DD/MM/YYYY"
+                          )
+                        : "Tarih bulunamadı"}
                     </p>
                   </li>
                   <li>
