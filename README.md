@@ -24,5 +24,4 @@ Geliştirme yaklaşımım oldukça modüler oldu. Her bileşeni bağımsız bir 
 
 Projeyi canlı olarak görmek için [Buraya tıklayabilirsiniz.](https://64f2171961cf37007969d11b--cerulean-begonia-23b89d.netlify.app/).
 
----
-**Not**: Bu README dosyası, projenizin tanıtımını ve kullanılan teknolojileri daha açık bir şekilde açıklar. Kendi projenize özgü bilgileri eklemeyi unutmayın.
+
