@@ -43,32 +43,36 @@ function DetailEvent() {
                 <ul>
                   <li>
                     <p>
-                      Etkinlik Ücretli Mi? :{" "}
+                    <span className="bold">Etkinlik Ücretli Mi?: </span>
+
                       {filteredData[0]?.UcretsizMi ? "Evet" : "Hayır"}{" "}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Etkinlik Başlama Saati :
+                      <span className="bold">Etkinlik Başlama Saati: </span>
+                      
                       {filteredData[0]?.EtkinlikBaslamaTarihi
                         ? moment(filteredData[0].EtkinlikBaslamaTarihi).format(
-                            "DD/MM/YYYY"
+                            "HH:mm:ss"
                           )
                         : "Tarih bulunamadı"}
                     </p>
                   </li>
                   <li>
                     <p>
-                      Etkinlik Bitiş Saati :{" "}
+                    <span className="bold">Etkinlik Bitiş Saati: </span>
                       {filteredData[0]?.EtkinlikBitisTarihi
                         ? moment(filteredData[0].EtkinlikBitisTarihi).format(
-                            "DD/MM/YYYY"
+                            "HH:mm:ss"
                           )
                         : "Tarih bulunamadı"}
                     </p>
                   </li>
                   <li>
-                    <p>Etkinlik Türü: {filteredData[0]?.Tur} </p>
+                  <p>
+                  <span className="bold">Etkinlik Türü:  </span>
+                   {filteredData[0]?.Tur} </p>
                   </li>
                 </ul>
 

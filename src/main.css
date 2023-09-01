@@ -180,6 +180,9 @@ a {
   font-size: 20px;
   font-weight: 700; }
 
+.bold {
+  font-weight: 700; }
+
 .container {
   width: 94%;
   max-width: 1024px;
