@@ -112,14 +112,23 @@ a {
   align-items: center;
   margin-top: 2rem; }
 
+@media (max-width: 478px) {
+  .search-bar h2 {
+    font-size: 24px; } }
+
 .navbar {
   background-color: #5522CC;
   color: #fff;
-  position: relative; }
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000; }
   .navbar .container {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
     .navbar .container .logo {
       height: 100px;
       width: 120px;

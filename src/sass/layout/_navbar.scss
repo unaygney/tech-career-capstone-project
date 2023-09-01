@@ -1,7 +1,12 @@
 .navbar {
   background-color: $color-purple;
   color: $color-white;
-  position: relative;
+position: sticky;
+top: 0;
+left: 0;
+right: 0;
+z-index: 10000;
+
  
 
 
@@ -9,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    position: relative;
     .logo {
       height: 100px;
       width: 120px;

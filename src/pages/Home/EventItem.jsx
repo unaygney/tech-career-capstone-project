@@ -3,15 +3,14 @@ import DataContext from "../../context/DataContext";
 import "react-loading-skeleton/dist/skeleton.css";
 import Skeleton from "react-loading-skeleton";
 import { useNavigate } from "react-router-dom";
+import 'moment/locale/tr';
+import moment from "moment";
+
 
 function EventItem({ data }) {
   const navigate = useNavigate();
-  const date = new Date(data.EtkinlikBaslamaTarihi);
-  const formattedDate = date.toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-  });
   const { dataFetched } = useContext(DataContext);
+
 
   return (
     <div onClick={() => navigate(`event/${data.Id}`) } className="card">
@@ -26,7 +25,7 @@ function EventItem({ data }) {
       <div className="card-content">
         <div className="date-container">
           {dataFetched ? (
-            <h4 className="date">{formattedDate}</h4>
+            <h4 className="date">{moment(data?.EtkinlikBaslamaTarihi).format('DD/MM ')}</h4>
           ) : (
             <Skeleton width={50} />
           )}
