@@ -34,15 +34,15 @@ function Carousel() {
         </SwiperSlide>
 
         <SwiperSlide>
-        <img src={Image2} alt="concert-photo-2" />
+          <img src={Image2} alt="concert-photo-2" />
         </SwiperSlide>
 
         <SwiperSlide>
-        <img src={Image3} alt="exhibit-photo" /> 
+          <img src={Image3} alt="exhibit-photo" />
         </SwiperSlide>
 
         <SwiperSlide>
-        <img src={Image4} alt="theater-photo" /> 
+          <img src={Image4} alt="theater-photo" />
         </SwiperSlide>
       </Swiper>
     </>

@@ -1,10 +1,8 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import TextField from '@mui/material/TextField';
+import TextField from "@mui/material/TextField";
 
-function SearchBar({search , setSearch}) {
-
-
+function SearchBar({ search, setSearch }) {
   return (
     <div className="container">
       <div className="search-bar">
@@ -25,7 +23,6 @@ function SearchBar({search , setSearch}) {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
-
           </Box>
         </div>
       </div>

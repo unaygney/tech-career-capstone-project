@@ -11,7 +11,6 @@ function CinemaPage() {
     <div className="">
       <Navbar />
       <CinemaList />
-
       <Footer />
     </div>
   );

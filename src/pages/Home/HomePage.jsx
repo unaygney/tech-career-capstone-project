@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 // Components
 import Navbar from "../../layouts/Navbar";
@@ -8,9 +8,7 @@ import EventList from "./EventList";
 import Footer from "../../layouts/Footer";
 
 function HomePage() {
-
-  const [search, setSearch] = useState('')
-
+  const [search, setSearch] = useState("");
 
   return (
     <div className="">

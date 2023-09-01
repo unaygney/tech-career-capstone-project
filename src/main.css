@@ -8,19 +8,87 @@
 * {
   box-sizing: border-box; }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -29,22 +97,35 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
@@ -63,15 +144,21 @@ button {
 a {
   text-decoration: none; }
 
-body, html {
+body,
+html {
   width: 100%;
   height: 100%;
   overflow-x: hidden; }
 
 body {
-  font-family: 'DM Sans', sans-serif; }
+  font-family: "DM Sans", sans-serif; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700; }
 
 p {
@@ -117,7 +204,7 @@ a {
     font-size: 24px; } }
 
 .navbar {
-  background-color: #5522CC;
+  background-color: #5522cc;
   color: #fff;
   position: sticky;
   top: 0;
@@ -139,7 +226,7 @@ a {
       .navbar .container .links a {
         color: inherit; }
         .navbar .container .links a.active {
-          padding-bottom: .4rem;
+          padding-bottom: 0.4rem;
           border-bottom: 1px solid #a5a5a5; }
         .navbar .container .links a:hover {
           opacity: 0.6; }
@@ -159,14 +246,14 @@ a {
     width: 200px;
     border-radius: 12px;
     padding: 2rem 1rem;
-    transition: all .3s ease-in;
+    transition: all 0.3s ease-in;
     z-index: 1000; }
     .navbar .container .links.active {
       right: 50px; }
     .navbar .container .links a {
       width: 100%;
       text-align: center;
-      padding: .5rem 0; }
+      padding: 0.5rem 0; }
   .navbar .container .hamburger-btn {
     display: block; } }
 
@@ -184,7 +271,7 @@ a {
     overflow: hidden;
     border-radius: 20px 20px 0 0;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    transition: all .3s;
+    transition: all 0.3s;
     cursor: pointer; }
     .cards .card:hover {
       transform: scale(1.1); }
@@ -217,7 +304,7 @@ a {
 
 #footer {
   background-color: #0a075f;
-  color: #F3F3F3;
+  color: #f3f3f3;
   margin-top: auto; }
   #footer .container {
     display: flex;
@@ -233,7 +320,7 @@ a {
         height: 100px; }
       #footer .container .col.col-1 .about-us p {
         font-size: 14px;
-        color: #F3F3F3;
+        color: #f3f3f3;
         line-height: 22.4px;
         font-weight: 400; }
     #footer .container .col.col-2 {
@@ -282,7 +369,7 @@ a {
                 fill: #a5a5a5; }
 
 body {
-  background-color: #E2E0FF; }
+  background-color: #e2e0ff; }
 
 .event-card {
   display: flex;
@@ -299,7 +386,7 @@ body {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: all .3s; }
+    transition: all 0.3s; }
     .event-card .img-wrapper:hover {
       transform: scale(1.1); }
     .event-card .img-wrapper img {

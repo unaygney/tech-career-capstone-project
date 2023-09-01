@@ -1,78 +1,72 @@
-
-  .event-card {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    flex-wrap: wrap;
+.event-card {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
   margin-top: 2rem;
   height: 900px;
 
-  
-    .img-wrapper {
-      max-width: 400px;
-      width: 94%;
-      height: 50%;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      transition: all .3s;
-  
-      &:hover{
-        transform: scale(1.1);
-      }
-  
-      img {
-        object-fit: contain;
+  .img-wrapper {
+    max-width: 400px;
+    width: 94%;
+    height: 50%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s;
 
-      }
+    &:hover {
+      transform: scale(1.1);
     }
-  
-    .event-content {
 
-      flex: 1;
+    img {
+      object-fit: contain;
+    }
+  }
 
-  
-      .event-information{
-        margin-top: 1rem;
-  
-        .event-heading{
-          margin-bottom: 1rem;
-        }
-  
-        ul{
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-  
-          li{
-            p{
-              color: $color-black;
-              font-size: 16px;
-              font-weight: 500;
-  
-            }
-          }
-        }
-  
-        .location{
-          margin-top: 2rem;
-          display: flex;
-          align-items: center;
-      
-          gap: 12px;
-          
-          svg{
-            width: 30px;
-            height: 30px;
-          }
-  
-          p{
-            font-size: 24px;
-            font-weight: 500;
+  .event-content {
+    flex: 1;
+
+    .event-information {
+      margin-top: 1rem;
+
+      .event-heading {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        li {
+          p {
             color: $color-black;
+            font-size: 16px;
+            font-weight: 500;
           }
+        }
+      }
+
+      .location {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+
+        gap: 12px;
+
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+
+        p {
+          font-size: 24px;
+          font-weight: 500;
+          color: $color-black;
         }
       }
     }
   }
+}

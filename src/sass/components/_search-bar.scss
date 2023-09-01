@@ -1,15 +1,14 @@
-.search-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
 }
 
-
-@media (max-width : 478px){
-    .search-bar{
-        h2{
-            font-size: 24px;
-        }
+@media (max-width: 478px) {
+  .search-bar {
+    h2 {
+      font-size: 24px;
     }
+  }
 }

@@ -1,9 +1,9 @@
-// Abstract 
+// Abstract
 @import "abstracts/variables";
 
-// Base 
-@import "base/reset";             
-@import "base/typography";  
+// Base
+@import "base/reset";
+@import "base/typography";
 
 // Components
 @import "components/container";
@@ -14,7 +14,6 @@
 @import "layout/navbar";
 @import "layout/cards";
 @import "layout/footer";
-
 
 //Pages
 @import "pages/home.scss";

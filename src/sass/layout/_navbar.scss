@@ -1,14 +1,11 @@
 .navbar {
   background-color: $color-purple;
   color: $color-white;
-position: sticky;
-top: 0;
-left: 0;
-right: 0;
-z-index: 10000;
-
- 
-
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
 
   .container {
     display: flex;
@@ -28,8 +25,8 @@ z-index: 10000;
       a {
         color: inherit;
 
-        &.active{
-          padding-bottom: .4rem ;
+        &.active {
+          padding-bottom: 0.4rem;
           border-bottom: 1px solid $color-gray;
         }
 
@@ -47,9 +44,7 @@ z-index: 10000;
 
 @media (max-width: 478px) {
   .navbar {
-
     .container {
-
       .links {
         position: absolute;
         display: flex;
@@ -62,18 +57,16 @@ z-index: 10000;
         width: 200px;
         border-radius: 12px;
         padding: 2rem 1rem;
-        transition: all .3s ease-in ;
+        transition: all 0.3s ease-in;
         z-index: 1000;
-        &.active{
+        &.active {
           right: 50px;
         }
 
-        a{
+        a {
           width: 100%;
           text-align: center;
-          padding: .5rem 0;
-
-
+          padding: 0.5rem 0;
         }
       }
 

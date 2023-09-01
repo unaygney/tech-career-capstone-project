@@ -1,12 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/logo_transp.png";
-import HamburgerMenu from '../assets/hamburger-menu.png'
+import HamburgerMenu from "../assets/hamburger-menu.png";
 import { useState } from "react";
 
 function Navbar() {
-  const [isActive , setIsActive] = useState(false)
-
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <>
@@ -24,10 +23,12 @@ function Navbar() {
             <NavLink to="/concert">Konser</NavLink>
           </div>
 
-        <button onClick={() => isActive ? setIsActive(false) : setIsActive(true) } className="hamburger-btn">
-          <img src={HamburgerMenu} alt="hamburger-btn" />
-        </button>
-
+          <button
+            onClick={() => (isActive ? setIsActive(false) : setIsActive(true))}
+            className="hamburger-btn"
+          >
+            <img src={HamburgerMenu} alt="hamburger-btn" />
+          </button>
         </div>
       </nav>
     </>
