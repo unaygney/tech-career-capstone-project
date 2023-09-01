@@ -22,6 +22,6 @@ Geliştirme yaklaşımım oldukça modüler oldu. Her bileşeni bağımsız bir 
 
 ## Demo
 
-Projeyi canlı olarak görmek için [Buraya tıklayabilirsiniz.](https://64f21d3a45205809e2a94946--jolly-licorice-35bd23.netlify.app/).
+Projeyi canlı olarak görmek için [Buraya tıklayabilirsiniz.](https://kultursanart.netlify.app/)
 
 
